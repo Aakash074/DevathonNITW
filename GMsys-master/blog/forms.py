@@ -19,7 +19,7 @@ class GrievanceForm(forms.ModelForm):
     ), required=True, max_length=20)
     
     enroll = forms.CharField(widget=forms.TextInput(
-        attrs={'class':'form-control','placeholder':'Enter Enrollment no.'}
+        attrs={'class':'form-control','placeholder':'Enter registration no.'}
     ), required=True, max_length=20)
     
     #depart = forms.CharField(required=True, choices=DEPART)

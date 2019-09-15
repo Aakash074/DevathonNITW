@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
+<br>
+<br>
+<center>
 
     <form method="get" action="/search/">
         Enter Grievance ID: <input type="text" name="q" id="id_q" value="{{ query }}"/>
@@ -16,10 +18,13 @@
             Category: {{ result.depart }} <br>
             Description: {{ result.msg }} <br>
             Status: <b> {{ result.status }} </b> <br>
+
+            <br><br><br><br><br><br><br><br><br>
         {% endfor %}
     {% else %}
         <h3>Grievance ID not found</h3>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
     {% endif %}
-    
+    </center>
 
 {% endblock content %}

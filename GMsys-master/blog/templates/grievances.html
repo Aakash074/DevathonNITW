@@ -2,6 +2,8 @@
 {% load static %}
 {% block content %}
 
+<div class="griv" style="padding: 100px">
+
     <h1> All Grievances </h1>
     <hr><br>
     {% for tmp in obj %}
@@ -9,7 +11,13 @@
         Category: {{ tmp.depart }} <br>
         Description: {{ tmp.msg }} <br>
         Status: {{ tmp.status }} <br>
-        <br><hr><br>
-    {% endfor %}
 
+        <br><hr><br>
+   
+
+
+{% endfor %}
+
+
+</div>
 {% endblock content %}
